@@ -1,0 +1,154 @@
+body{
+	margin: 0;
+	padding: 0;
+	}
+.contenu{
+	display: flex;
+
+
+}
+
+
+
+/*dimantion de la nav barre*/
+.liseré{
+	background-color: #efd807;
+	width: 29%;
+	height: 240%;
+
+}
+ /*dimantion de la photo de profile*/
+.liseré .photo_de_profile{
+    background-color:#7F7F7F;
+	width: 128px ;
+	height: 128px;
+	margin: 25px auto 	15px auto;
+	border-radius: 50%;
+}
+/*catacteristique des titre*/
+.liseré h2{
+	margin-top: 20px;
+	background-color:#7F7F7F;
+	text-align: center;
+	color: #efd807 ;
+ }
+ /*liste a pousse des coordonnees*/
+ .liseré .ul li{
+ list-style-type: none;
+
+  	}
+/*taille de la police du texte a propos de moi */
+.liseré .para{
+	font-size:auto;
+}
+/*disposition des images mes loisirs*/
+.liseré .img{
+	display: flex;
+	justify-content: space-around;
+	height: 58%;
+}
+/*caracteristique des images mes loisirs */
+.liseré .img .rond { 
+    margin-top: 290%;
+	background-color:#7F7F7F;
+	width: 28px ;
+	height: 28px;
+	border-radius: 50%;
+	
+}
+/*fin de la nav barre*/
+
+/*dimantion du C.V*/
+.coeur_cv{
+
+height: 240%;
+width:auto;
+margin-left: 10%; 
+}
+/*taille de la police du titre principal*/
+h1{
+	font-size: 50px
+}
+/* definition de la couleur et de la largeur du trait*/
+.couleur{
+color: #efd807 ;
+}
+.ligne{
+border-bottom: 1px solid #efd807 ;
+}
+/*fin de la definition du trait*/
+.sous{
+margin-bottom: 70px;
+margin-top: 70px;	
+width: 90%;
+border-bottom: 1px solid #efd807 ;
+}
+.parag_haut{
+	display: flex;
+	justify-content: space-between;
+}
+
+.gauche{
+	width: 30%;
+}
+
+#parag_haut_un{
+	width: 55%;
+    margin-left: 11%;
+}
+
+.bloc{
+	display: flex;
+	justify-content: space-start;
+}
+
+
+#special_d{
+     width: 40%;
+}
+
+#milieu p{
+	margin-bottom: 114px;
+
+}
+
+.flex{
+	display: flex;
+	justify-content: space-between;
+    width: 40%
+}
+
+#text{
+	font-size: 25px
+}
+
+
+@media(max-width: 1280px){
+	.liseré{
+		width: 30%;
+		height: auto;
+	}
+    .coeur_cv{
+    	width: 70%;
+        height: auto;
+
+    }
+    .liseré .ul li{
+      margin-left: -40%;
+    }
+
+    .liseré .img .rond { 
+    margin-top: auto;
+	
+}
+ #test2{
+ 	margin-top: 200%;
+ }
+ #test3{
+ 	
+ }
+.flex{
+	width: 100%;
+}
+}
+

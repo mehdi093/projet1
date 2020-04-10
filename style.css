@@ -1,0 +1,224 @@
+/* debut reset css */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+	line-height: 1;
+}
+
+body {
+	line-height: 1;
+}
+
+
+/* fin reset css */
+/* disposition des div contenu et liseré */
+main{
+    display: flex;
+    flex-direction: row-reverse;
+   
+}
+/* taille de la div contenu */
+.contenu{
+        width: 70%;
+        margin-left: 10%;
+}
+/* disposition des element */
+.test{
+    display: flex;
+     justify-content: space-around;
+}
+
+
+/* element du titre principal h1 */
+.contenu h1{
+    font-size: 50px;
+}
+.couleur{
+    color: #efd807 ;
+    }
+.ligne{
+    border-bottom: 1px solid #efd807 ;
+    }
+/* represente le trait sous les titre h2 */
+.sous{
+    margin-bottom: 70px;
+    margin-top: 70px;	
+    width: 90%;
+    border-bottom: 1px solid #efd807 ;
+
+    }
+/* police des titres h2 */
+.contenu h2{
+    font-weight: bolder;
+    font-size: 20px;
+}
+ /*recommandation partie 3 */
+.flex{
+	display: flex;
+	justify-content: space-between;
+    width: 70%;
+    margin-bottom: 10%;
+}
+li {
+    list-style-type: disc;
+
+}
+li ::before{
+    color: #efd807;
+    box-shadow: #efd807 12px solid;
+    
+}
+::marker {
+    color:#efd807;
+    border-color: solid 12px red;
+
+}
+
+/* debut de la liseré  */
+/* dimention de la liseré  */
+.liseré{
+  background-color: #efd807;
+  width: 30%;
+ }
+ /* dimention de la photo de profile */
+
+.liseré .photo_de_profile{
+        width: 128px ;
+        height: 128px;
+        border-radius: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+    }
+        /* position: relative; */
+
+/* police couleur marche des titre */
+.liseré h3{
+        font-size: 20px;
+        margin-top: 20px;
+        background-color:#7F7F7F;
+        text-align: center;
+        color: #efd807 ;
+}
+/* coordonne */
+.liseré .ul li{
+     list-style-type: none;
+     margin-left: 10%;
+ }
+ /* la personne par d'elle meme */
+.para{
+        padding-bottom: 150%;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: justify;
+    }
+
+.liseré .p{
+        width:300px; 
+        bottom: 128px;
+        /* padding-bottom: 170%; */
+       
+    }
+/* la personne parle de ses loisir */
+    
+.liseré .image{
+        display: flex;
+        justify-content: space-around;
+        height: 58%;
+    }
+.liseré .image .rond { 
+        margin-bottom: 2%;
+        
+        width: 28px ;
+        height: 28px;
+        border-radius: 50%;
+        
+    }
+/* fin de la liseré  */
+
+
+
+
+@media screen and (max-width: 1280px)
+{
+    main{
+        flex-direction: column-reverse;
+       
+    }
+    .liseré{
+        background-color: #efd807;
+        width: 100%;
+       }
+       .liseré .ul li{
+        list-style-type: none;
+        margin-left: -2%;
+        text-align:center;
+    }
+    .para{
+        padding-bottom: 0%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .contenu h1{
+        font-size: 47px;
+        
+    }
+    .test{
+        flex-direction: column;
+        
+
+    }
+    .flex{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 10%;
+} 
+}

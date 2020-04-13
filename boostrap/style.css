@@ -1,0 +1,58 @@
+body{
+    background-color: black;
+}
+.container{
+    background-color: white;
+    padding-left: 10%;
+}
+/* disposition des element */
+/* .test{
+display: flex;
+ justify-content: space-around;
+} */
+
+
+/* element du titre principal h1 */
+.contenu h1{
+font-size: 50px;
+}
+.couleur{
+color: #efd807 ;
+}
+.ligne{
+border-bottom: 1px solid #efd807 ;
+}
+/* represente le trait sous les titre h2 */
+.sous{
+margin-bottom: 70px;
+margin-top: 70px;	
+width: 90%;
+border-bottom: 1px solid #efd807 ;
+
+}
+/* police des titres h2 */
+.contenu h2{
+font-weight: bolder;
+font-size: 20px;
+}
+/*recommandation partie 3 */
+.flex{
+display: flex;
+justify-content: space-between;
+width: 70%;
+margin-bottom: 10%;
+}
+li {
+list-style-type: disc;
+
+}
+li ::before{
+color: #efd807;
+box-shadow: #efd807 12px solid;
+
+}
+::marker {
+color:#efd807;
+border-color: solid 12px red;
+
+}

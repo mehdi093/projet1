@@ -1,0 +1,113 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.img{
+    text-align: center;
+    margin-bottom: 100px;
+    background-color: blue;
+}
+
+/* fin de reset */
+.contenu{
+    
+    height: 900px;
+    
+    display: grid;
+     grid-template-columns: 1fr 1fr ;
+     grid-template-rows: 1fr 1fr .15fr ;
+     margin-bottom:20% ;
+     grid-column-gap:5% ;
+     grid-row-gap: 4%;
+     margin-left: 25%;
+     margin-right: 25%;
+}
+.block{
+border: blue solid 2px;
+text-align: center;
+grid-template-rows: 1000fr 1fr;
+
+}
+.blocks{
+    border: blue solid 2px;
+    text-align: center;
+    width: 160%;
+    margin-left: 25%;
+}
+ .footer{
+     display: flex;
+    justify-content:space-between; 
+    width:100% ;
+    position: fixed;
+    bottom: 0;
+    background-color:blue;
+    padding-top: 10%;
+} 
+.button{
+    color: red;
+    font-weight: bold;  
+}
+.button:hover {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    animation: thing 1s infinite;
+}
+
+@keyframes thing {
+    0%{transform: rotate(0deg);}
+    10%{transform: rotate(-2deg);}
+    20%{transform: rotate(0deg);}
+    30%{transform: rotate(2deg);}
+    40%{transform: rotate(0deg);}
+    50%{transform: rotate(-2deg);}
+    60%{transform: rotate(0deg);}
+    70%{transform: rotate(2deg);}
+    80%{transform: rotate(0deg);}
+    90%{transform: rotate(-2deg);}
+    100%{transform: rotate(0deg);}
+}
